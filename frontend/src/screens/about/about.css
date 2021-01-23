@@ -1,0 +1,74 @@
+.aboutContainer {
+  z-index: 1;
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 40px auto;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+  height: 50%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.react {
+  color: #3490de;
+}
+.redux {
+  color: #3a0088;
+}
+.mongo {
+  color: #00af91;
+}
+.express {
+  color: #c70039;
+}
+.nodejs {
+  color: #295939;
+}
+
+.aboutMe .email {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+}
+
+.aboutMe .email:hover {
+  color: #ff4885;
+}
+
+.aboutMe a {
+  text-decoration: none;
+}
+
+.react:visited {
+  color: #3490de;
+}
+.redux:visited {
+  color: #3a0088;
+}
+.mongo:visited {
+  color: #00af91;
+}
+.express:visited {
+  color: #c70039;
+}
+.nodejs:visited {
+  color: #295939;
+}
+
+@media (max-width: 480px) {
+  .aboutMe {
+    width: 100%;
+  }
+}

@@ -1,0 +1,101 @@
+.plContainer {
+  z-index: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 60px auto;
+}
+
+.plRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+
+.plTable {
+  margin: auto;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(92, 99, 105, 0.2);
+  overflow: hidden;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#plHeader {
+  color: #000;
+}
+
+.plTable td {
+  padding: 10px;
+  text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.plButton {
+  position: relative;
+  margin: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  color: #010606;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.plButton:hover {
+  color: #ff5d94;
+}
+
+.plButton:nth-child(2):hover {
+  color: #ff000d;
+}
+
+.prCreate {
+  display: block;
+  margin-left: auto;
+  color: #ff5d94;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: none;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.prCreate:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 640px) {
+  .plTable {
+    width: 40%;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plTable {
+    width: 10%;
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 280px) {
+  .plTable {
+    width: 8%;
+    font-size: 4px;
+  }
+}

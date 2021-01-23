@@ -1,0 +1,36 @@
+.cardContent {
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.cardLink {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #010606;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.cardImage {
+  max-width: 150px;
+  transition: 0.5s;
+  transform: scale(1);
+}
+.cardImage:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.homeProductTitle {
+  font-size: 1rem;
+}
+
+.homeProductPrice {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  font-size: 2em;
+  color: rgba(0, 0, 255, 0.3);
+}

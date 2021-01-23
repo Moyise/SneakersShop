@@ -1,0 +1,48 @@
+/* Home */
+
+.homeContainer {
+  z-index: 1;
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 24px auto;
+}
+
+.homeTitle {
+  display: flex;
+  justify-self: flex-start;
+  margin: auto auto auto 0;
+  color: #000;
+}
+
+/* Home Product */
+
+.cardContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.homeCard {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  margin: 30px 10px;
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  transition: 0.2s;
+  transform: scale(1);
+}
+.homeCard:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+}

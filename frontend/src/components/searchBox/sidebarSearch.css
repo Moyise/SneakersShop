@@ -1,0 +1,39 @@
+.sbFormSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.sbFormGroupSide {
+  position: relative;
+}
+
+.sbFormInputSide {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.sbFormInputSide:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.sbButtonSide {
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: none;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sbButtonSide:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}

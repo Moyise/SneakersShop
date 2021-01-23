@@ -1,0 +1,160 @@
+.csContainer {
+  z-index: 1;
+  max-width: 1100px;
+  width: 100%;
+  padding: 24px;
+  margin: 24px auto;
+}
+
+.csTitle {
+}
+
+.csRow {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.csCol {
+  padding: 20px;
+  font-weight: 600;
+}
+
+.csListGroup {
+}
+
+.csItem {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.csImg {
+  max-width: 150px;
+  border-radius: 0.5rem;
+}
+
+.csSelect {
+  position: relative;
+  width: auto;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  color: #000;
+  border-radius: 10%;
+  padding: 8px;
+  background: transparent;
+  font-weight: 600;
+  outline: none;
+}
+
+.csOption {
+  position: relative;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 60px;
+  background: transparent;
+  outline: none;
+}
+
+.csButton {
+  position: relative;
+  margin: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  color: #010606;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  padding: 10px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.csButton:hover {
+  transition: 0.1s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.csLink {
+  position: relative;
+  margin: auto;
+  white-space: nowrap;
+  color: #010606;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  padding: 10px;
+}
+
+.csTable {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 0.5rem;
+  width: 200px;
+  height: 120px;
+  margin: auto;
+}
+
+.csCheckoutButton {
+  position: relative;
+  margin: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  color: #010606;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  padding: 5px 10px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.csCheckoutButton:hover {
+  transition: 0.1s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* media */
+
+@media (max-width: 960px) {
+  .csRow {
+    display: block;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .csCol {
+    padding: 10px 20px;
+    font-weight: 600;
+  }
+
+  .csItem {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .csImg {
+    max-width: 150px;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .csImg {
+    max-width: 100px;
+    border-radius: 0.5rem;
+  }
+}

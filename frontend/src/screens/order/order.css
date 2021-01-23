@@ -1,0 +1,98 @@
+.osContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.orderId {
+  margin: 40px auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.osRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.osCol {
+  padding: 10px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.osListGroup {
+}
+
+.osListItem {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mailLink {
+  text-decoration: none;
+  color: rgb(49, 103, 252);
+}
+
+.osCol img {
+  max-width: 60px;
+  border-radius: 0.5rem;
+}
+
+.osLink {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.osLink:hover {
+  transition: 0.3s;
+  color: #ff5d94;
+}
+
+.osCard {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.osCardListGroup {
+}
+
+.osCardListItem {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px 0;
+}
+
+.osCardRow {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.osButton {
+  position: relative;
+  margin: auto;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  color: #010606;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  padding: 10px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}

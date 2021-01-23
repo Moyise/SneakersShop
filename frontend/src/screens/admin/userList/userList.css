@@ -1,0 +1,98 @@
+.ulContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.ulTitle {
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.ulTable {
+  width: 90%;
+  /* border-collapse: collapse; */
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(92, 99, 105, 0.2);
+  overflow: hidden;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ulTable td {
+  padding: 10px;
+  text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#ulHeader {
+  color: #000;
+}
+
+.ulTable a {
+  text-decoration: none;
+  color: #3490de;
+}
+.ulTable a:hover {
+  color: #ff5d94;
+}
+
+.ulButton {
+  position: relative;
+  margin: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  color: #010606;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.ulButton:hover {
+  color: #ff5d94;
+}
+
+.ulButton:nth-child(2):hover {
+  color: #ff000d;
+}
+
+.ulButton.disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+  .ulTable {
+    width: 40%;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ulTable {
+    width: 10%;
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 280px) {
+  .ulTable {
+    width: 10%;
+    font-size: 4px;
+  }
+}

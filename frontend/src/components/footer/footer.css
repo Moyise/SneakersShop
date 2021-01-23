@@ -1,0 +1,43 @@
+.footerContainer {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 1);
+  overflow: hidden;
+}
+
+.footerRow {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: row wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.socials a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 10px;
+}
+
+.socials a i {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 30px;
+  padding: 0 12px;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.footerRow a i:hover {
+  color: #3490de;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
