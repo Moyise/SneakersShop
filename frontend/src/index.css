@@ -23,8 +23,7 @@ body {
     rgba(252, 158, 255, 0.925) 80%,
     rgb(93, 225, 255) 88%
   );
-  background-size: 100% 200%;
-  scroll-behavior: smooth;
+
   z-index: -10;
 }
 
