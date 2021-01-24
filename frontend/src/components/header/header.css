@@ -281,6 +281,7 @@
 }
 
 .action .menu {
+  position: fixed;
   top: 120px;
   right: 150px;
   background: rgba(255, 255, 255, 0.9);
