@@ -1,10 +1,10 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "../../actions/userActions";
 import { FaTimes } from "react-icons/fa";
 import "./header.css";
 import SidebarSearchBox from "../searchBox/SidebarSearchBox";
-import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../../actions/userActions";
 
 const Sidebar = ({ open, toggle }) => {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const Sidebar = ({ open, toggle }) => {
             className={
               userInfo && userInfo.isAdmin ? "sidebarLink top admin" : "sidebarLink top"
             }
-            to="/about"
+            to="/"
           >
             Welcome {userInfo && userInfo.isAdmin ? "Admin" : userInfo && userInfo.name}
           </Link>
