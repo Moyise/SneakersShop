@@ -43,12 +43,5 @@ if (process.env.NODE_ENV === "production") {
   app.get("/", (req, res) => res.send("API is running..."));
 }
 
-(function wakeUp() {
-  open("https://mysneaker.herokuapp.com/", (err) => {
-    if (err) throw err;
-    console.log("Woke up!");
-    setTimeout(wakeUp, 1.74e6); //29m
-  });
-})();
 
 app.listen(PORT, () => console.log(`ShoeShop app listening on port ` + PORT));
