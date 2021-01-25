@@ -7,6 +7,7 @@ const productRoutes = require("./routes/productRoutes");
 const userRoutes = require("./routes/userRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const uploadRoutes = require("./routes/uploadRoutes");
+const open = require("open");
 
 dotenv.config();
 
@@ -41,5 +42,13 @@ if (process.env.NODE_ENV === "production") {
 } else {
   app.get("/", (req, res) => res.send("API is running..."));
 }
+
+(function wakeUp() {
+  open("https://mysneaker.herokuapp.com/", (err) => {
+    if (err) throw err;
+    console.log("Woke up!");
+    setTimeout(wakeUp, 5000); //29m
+  });
+})();
 
 app.listen(PORT, () => console.log(`ShoeShop app listening on port ` + PORT));
