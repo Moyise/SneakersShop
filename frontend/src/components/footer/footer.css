@@ -1,10 +1,8 @@
 .footerContainer {
-  position: relative;
-  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  height: 120px;
   width: 100%;
-  background: rgba(231, 231, 231, 0.8);
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.7);
-  overflow: hidden;
 }
 
 .footerRow {

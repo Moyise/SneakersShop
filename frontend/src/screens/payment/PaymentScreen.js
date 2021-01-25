@@ -59,7 +59,9 @@ const PaymentScreen = ({ history }) => {
               </label>
             </div>
           </div>
-          <input type="submit" className="formButton" value="Continue" />
+          <button type="submit" className="formButton">
+            Continue
+          </button>
         </form>
       </div>
     </>

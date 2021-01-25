@@ -107,6 +107,45 @@ const Navbar = () => {
                 </Link>
               )}
             </li>
+            <li>
+              {userInfo && (
+                <>
+                  <ul className={show ? "adminSidebar show" : "adminSidebar"}>
+                    <li>
+                      <Link className="aLink" to="/profile">
+                        <i className="fas fa-user-circle"></i> Profile
+                      </Link>
+                    </li>
+
+                    {userInfo && userInfo.isAdmin && (
+                      <>
+                        <li>
+                          <Link className="aLink" to="/admin/userlist">
+                            <i className="fas fa-users"></i> Users
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="aLink" to="/admin/orderlist">
+                            <i className="fas fa-sticky-note"></i> Orders
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="aLink" to="/admin/productlist">
+                            <i className="fas fa-shopping-basket"></i> Products
+                          </Link>
+                        </li>
+                      </>
+                    )}
+
+                    <li>
+                      <div className="aLink" onClick={logoutHandler}>
+                        <i className="fas fa-sign-out-alt"></i> Logout
+                      </div>
+                    </li>
+                  </ul>
+                </>
+              )}
+            </li>
           </ul>
           <label id="icon" onClick={() => setShow(!show)}>
             <i className={show ? "fas fa-times" : "fas fa-bars"}></i>

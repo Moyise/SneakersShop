@@ -23,8 +23,8 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
         <section className="container">
+          <Header />
           <Switch>
             <Route path="/order/:id" exact component={OrderScreen} />
             <Route path="/placeorder" exact component={PlaceOrderScreen} />
@@ -44,8 +44,8 @@ function App() {
             <Route path="/search/:keyword" exact component={HomeScreen} />
             <Route path="/" exact component={HomeScreen} />
           </Switch>
+          <Footer />
         </section>
-        <Footer />
       </Router>
     </>
   );

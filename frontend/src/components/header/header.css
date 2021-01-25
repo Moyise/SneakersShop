@@ -9,9 +9,6 @@ div.navContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(231, 231, 231, 0.8);
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.7);
-  overflow: hidden;
   height: 80px;
   width: 100%;
 }
@@ -50,6 +47,11 @@ nav .aLink {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
+}
+
+nav .aLink:hover {
+  color: #ff5d94;
 }
 
 nav .aLinkBtn {
@@ -124,11 +126,10 @@ nav #icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 10;
+  z-index: 12;
 }
 
 .action .profile {
-  position: relative;
   color: #3490de;
   align-items: center;
   text-decoration: none;
@@ -152,7 +153,6 @@ nav #icon {
 .action .menu {
   position: fixed;
   top: 120px;
-  right: 150px;
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
@@ -196,13 +196,33 @@ nav #icon {
   color: #ff5d94;
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
-  .action .menu {
-    position: fixed;
-    top: 120px;
-    right: 60px;
-  }
+/*==============*/
+
+nav ul.adminSidebar {
+  display: none;
 }
 
 @media (max-width: 960px) {
+  .action .profile {
+    display: none;
+  }
+
+  nav ul.adminSidebar {
+    position: fixed;
+    text-align: center;
+    display: block;
+    top: -200%;
+    transition: all 0.5s;
+  }
+
+  nav ul.adminSidebar li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul.adminSidebar.show {
+    top: 35%;
+    transition: all 0.5s;
+  }
 }
