@@ -2,6 +2,7 @@
   padding: 10px;
   text-align: center;
   transition: 0.5s;
+  z-index: 3;
 }
 
 .cardLink {
