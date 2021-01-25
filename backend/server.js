@@ -47,7 +47,7 @@ if (process.env.NODE_ENV === "production") {
   open("https://mysneaker.herokuapp.com/", (err) => {
     if (err) throw err;
     console.log("Woke up!");
-    setTimeout(wakeUp, 5000); //29m
+    setTimeout(wakeUp, 1.74e6); //29m
   });
 })();
 
