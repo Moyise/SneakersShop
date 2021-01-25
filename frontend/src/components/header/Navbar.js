@@ -1,20 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, Route } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
-import { FiShoppingBag } from "react-icons/fi";
-import { BsCardHeading } from "react-icons/bs";
 import "./header.css";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../actions/userActions";
 import SearchBox from "../searchBox/SearchBox";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import GroupIcon from "@material-ui/icons/Group";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-import NoteIcon from "@material-ui/icons/Note";
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
-const Navbar = ({ toggle }) => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [show, setShow] = useState(false);
   const dispatch = useDispatch();
   const ref = useRef();
 
@@ -42,25 +35,25 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <nav className="nav">
-        <div className="navContainer">
-          <Link className="navLogo" to="/">
-            Sneakers
-          </Link>
-          <div className="mobileIcon" onClick={toggle}>
-            <FaBars />
-          </div>
-          <Route render={({ history }) => <SearchBox history={history} />} />
-          <ul className="navMenu">
-            <li className="navItem">
-              <Link className="navLink" to="/about">
-                <BsCardHeading style={{ marginRight: "5px" }} />
-                About
+      <div className="navContainer">
+        <nav>
+          <label>
+            <Link className="logo" to="/">
+              Sneakers
+            </Link>
+          </label>
+          <ul className={show ? "show" : ""} onClick={() => setShow(!show)}>
+            <li>
+              <Route render={({ history }) => <SearchBox history={history} />} />
+            </li>
+            <li>
+              <Link className="aLink" to="/about">
+                <i className="fas fa-address-card"></i> About
               </Link>
             </li>
-            <li className="navItem">
-              <Link className="navLink" to="/cart">
-                <FiShoppingBag style={{ marginRight: "5px" }} /> Cart
+            <li>
+              <Link className="aLink" to="/cart">
+                <i className="fas fa-shopping-cart"></i> Cart
               </Link>
             </li>
             <li>
@@ -78,34 +71,30 @@ const Navbar = ({ toggle }) => {
                         {userInfo && userInfo.isAdmin && (
                           <>
                             <li>
-                              <Link className="navLink" to="/admin/userlist">
-                                <GroupIcon className="icon" /> Users
+                              <Link className="aLink" to="/admin/userlist">
+                                <i className="fas fa-users"></i> Users
                               </Link>
                             </li>
                             <li>
-                              <Link className="navLink" to="/admin/orderlist">
-                                <NoteIcon className="icon" />
-                                Orders
+                              <Link className="aLink" to="/admin/orderlist">
+                                <i className="fas fa-sticky-note"></i> Orders
                               </Link>
                             </li>
                             <li>
-                              <Link className="navLink" to="/admin/productlist">
-                                <ShoppingBasketIcon className="icon" />
-                                Products
+                              <Link className="aLink" to="/admin/productlist">
+                                <i className="fas fa-shopping-basket"></i> Products
                               </Link>
                             </li>
                           </>
                         )}
                         <li>
-                          <Link className="navLink" to="/profile">
-                            <AccountCircleIcon className="icon" />
-                            Profile
+                          <Link className="aLink" to="/profile">
+                            <i className="fas fa-user-circle"></i> Profile
                           </Link>
                         </li>
                         <li>
-                          <div className="navLink" onClick={logoutHandler}>
-                            <ExitToAppIcon className="icon" />
-                            Logout
+                          <div className="aLink" onClick={logoutHandler}>
+                            <i className="fas fa-sign-out-alt"></i> Logout
                           </div>
                         </li>
                       </ul>
@@ -113,16 +102,21 @@ const Navbar = ({ toggle }) => {
                   </div>
                 </>
               ) : (
-                <Link className="navBtnLink" to="/login">
+                <Link className="aLinkBtn" to="/login">
                   Sign In
                 </Link>
               )}
             </li>
           </ul>
-        </div>
-      </nav>
+          <label id="icon" onClick={() => setShow(!show)}>
+            <i className={show ? "fas fa-times" : "fas fa-bars"}></i>
+          </label>
+        </nav>
+      </div>
     </>
   );
 };
 
 export default Navbar;
+
+// };

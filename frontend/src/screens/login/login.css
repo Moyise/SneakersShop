@@ -1,5 +1,4 @@
 .sample {
-  z-index: 1;
   max-width: 1100px;
   width: 100%;
   margin: 40px auto 0;
@@ -10,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+
   max-width: 1100px;
   width: 100%;
   margin: auto;
@@ -44,7 +43,6 @@
   outline: none;
   padding: 1rem;
   background: none;
-  z-index: 1;
   font-weight: 600;
 }
 .formLabel {
@@ -79,7 +77,6 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  z-index: 10;
 }
 
 /*Input focus sticky top label*/
@@ -87,7 +84,6 @@
   top: -1.3rem;
   left: 0.8rem;
   font-weight: 500;
-  z-index: 10;
 }
 
 /*Input focus*/
